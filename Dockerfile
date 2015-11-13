@@ -10,7 +10,7 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 USER hubot
-RUN cd ~ && echo 'n' | yo hubot --adapter=slack --owner="Patrik Antonsson <patant@gmail.com>" --name="hubot" --description="The BOT" && \
+RUN cd ~ && echo 'n' | yo hubot --adapter=slack --owner="Patrik Antonsson <patant@gmail.com>" --name="bot" --description="The BOT" && \
     npm install hubot-devopsreactions --save && \
     npm install hubot-cute-me --save && \
     npm install hubot-curl --save && \
